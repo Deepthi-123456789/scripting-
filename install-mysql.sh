@@ -10,7 +10,7 @@ else
 fi
 yum install mysql -y
 
-if [ $? -nq 0 ]
+if [ $? -ne 0 ]
 then 
     echo "installation is not succesfull"
     exit 1
