@@ -7,9 +7,9 @@ echo "script name $0"
 
 if [ $ID -ne 0 ]
 then    
-    echo "$R not a root user $N"
+    echo -e "$R not a root user $N"
 else
-    echo "$G root user $N"
+    echo -e "$G root user $N"
 fi
 
 echo "all the arguments passed: $@"
