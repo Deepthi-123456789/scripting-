@@ -1,15 +1,17 @@
 #!/bin/bash
 
 ID=$(id -u)
+R="\e[31m"
+G="\e[32m"
 echo "script name $0"
 
 validate(){
     if [ $? -ne 0 ]
     then 
-        echo "$1 is not succesfull"
+        echo -e " $R $1 is not succesfull"
         exit 1
     else
-        echo "$1  is sucess"
+        echo -e" $g $1  is sucess"
     fi
 }
 
