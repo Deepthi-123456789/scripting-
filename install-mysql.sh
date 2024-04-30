@@ -9,6 +9,7 @@ else
     echo "root user"
 fi
 yum install mysql -y
+
 if [ $? -nq 0 ]
 then 
     echo "installation is not succesfull"
