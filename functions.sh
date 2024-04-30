@@ -9,10 +9,10 @@ echo "script name $0"
 validate(){
     if [ $? -ne 0 ]
     then 
-        echo -e "  $1 is $R not succesfull $N"
+        echo -e "$1 is $R not succesfull $N"
         exit 1
     else
-        echo -e"  $1  is $Gsucess $N"
+        echo -e "$1  is $G sucess $N"
     fi
 }
 
