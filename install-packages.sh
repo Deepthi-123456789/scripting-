@@ -27,7 +27,7 @@ else
     echo -e "$G root user $N"
 fi
 
-#echo "all the arguments passed: $@"
+echo "all the arguments passed: $@"
 
 for package in $@
 do
