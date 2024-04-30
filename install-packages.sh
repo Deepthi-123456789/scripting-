@@ -5,9 +5,9 @@ G="\e[32m"
 N="\e[0m"
 echo "script name $0"
 
-timestamp=$(data +%F-%H-%M-%S)
+#timestamp=$(data +%F-%H-%M-%S)
 
-echo "script started excuting at $timestamp"
+#echo "script started excuting at $timestamp"
 
 validate(){
     if [ $? -ne 0 ]
@@ -22,16 +22,17 @@ validate(){
 if [ $ID -ne 0 ]
 then    
     echo -e "$R not a root user $N"
+    exit 1
 else
     echo -e "$G root user $N"
 fi
 
-echo "all the arguments passed: $@"
+#echo "all the arguments passed: $@"
 
 for package in $@
 do
     yum list installed $package
-    if [$? -ne 0]
+    if [ $? -ne 0 ]
     then
         yum install $package -y
         validate "installion of  $package"
