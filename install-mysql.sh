@@ -1,7 +1,7 @@
 #!/bin/bash
 
 id=$(id)
-if[ $id -neq 0 ]
+if[ $id -ne 0 ]
 then
     echo "not a root user"
 else
