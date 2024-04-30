@@ -18,6 +18,6 @@ else
     echo "root user"
 fi
 yum install mysql -y
-validate
+validate "mysql installation"
 yum install git -y
-validate
+validate "git installation"
