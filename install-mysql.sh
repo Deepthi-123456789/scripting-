@@ -8,15 +8,15 @@ then
 else
     echo "root user"
 fi
-yum install mysql -y
+#yum install mysql -y
 
-if [ $? -ne 0 ]
-then 
-    echo "installation is not succesfull"
-    exit 1
-else
-    echo "installing mysql is sucess"
-fi
+#if [ $? -ne 0 ]
+#then 
+    #echo "installation is not succesfull"
+    #exit 1
+#else
+    #echo "installing mysql is sucess"
+#fi
 
 yum install git -y
 
