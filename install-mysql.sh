@@ -6,3 +6,4 @@ then
     echo "not a root user"
 else
     echo "root user"
+fi
