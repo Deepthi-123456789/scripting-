@@ -19,4 +19,5 @@ fi
  while IFS= read -r line
  do 
     echo "Deleting file: $line"
+    rm -rf $line
 done <<< $files_to_delete
