@@ -9,7 +9,7 @@ N="\e[0m"
 
 
 
-if [! -d $source_dir]
+if [ ! -d $source_dir ]
 then
     echo -e "source dir does not exists"
 fi
@@ -18,6 +18,5 @@ fi
 
  while IFS=read -r line
  do 
-    echo "Deletinf file: $line"
-    rm -rf $line
+    echo "Deleting file: $line"
 done <<< $files_to_delete
