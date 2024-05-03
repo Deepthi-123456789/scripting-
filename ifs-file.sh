@@ -1,6 +1,6 @@
 #!/bin/bash
 
-source_dir="/tmp/scripting-logs"
+file =
 R="\e[31m"
 G="\e[32m"
 Y="\e[33m"
