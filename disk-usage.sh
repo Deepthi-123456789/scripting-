@@ -8,8 +8,9 @@ hile IFS= read line
 do
     usage =$(echo $line | awk '{prink $6}' |cut -d % -f1)
     partion =$(echo $line | awk '{prink $6}')
-    if [ $usage -gt $Disk_threshold ]
+    if [ $usage -ge $Disk_threshold ]
     then
         message+="high disk usage"
     fi
 done <<< $Disk_usage
+echo "message =$meaasage"
