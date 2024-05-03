@@ -15,7 +15,7 @@ then
 fi
 
 
-while IFS=":" read -r username password user-id group-id user-fullname home-dir shell-path
+while IFS=":" read -r username password user_id group_id user_fullname home_dir shell_path
 do 
     echo "username =$username"
     echo "password =$password"
