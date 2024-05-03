@@ -10,7 +10,7 @@ do
     partion =$(echo $line | awk '{prink $6}')
     if [ $usage -ge $Disk_threshold ]
     then
-        message+="high disk usage"
+        message+="high disk usage\n"
     fi
 done <<< $Disk_usage
-echo "message =$meaasage"
+echo -e "message: $meaasage"
