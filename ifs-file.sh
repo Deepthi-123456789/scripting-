@@ -9,7 +9,7 @@ N="\e[0m"
 
 
 
-if [ ! -d $source_dir ]
+if [ ! -d $file ]
 then
     echo -e "source dir does not exists"
 fi
