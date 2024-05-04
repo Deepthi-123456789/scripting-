@@ -19,7 +19,7 @@ while getops "n:w:h" opt; do
     esac
 done
 
-if [-z "$Name" ]; then
+if [ -z "$Name" ]; then
     echo "Error:  -n is mandarotry optins."
     Usage
     exit 1
