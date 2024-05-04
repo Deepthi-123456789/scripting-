@@ -4,7 +4,7 @@ Name=""
 Wishes=""
 
 Usage(){
-    echo "Usage:: $(basename $0) -n <Name> -w <Wishes>"
+    echo "Usage:: $(basename $0) -n <name> -w <wishes>"
     echo "options::"
     echo "-n, specify the name"
     echo "-w, specify the wishes.(optinal). default is good morning"
