@@ -15,7 +15,7 @@ while getopts ":n:w:h" opt; do
     case $opt in
         n)Name="$optarg";;
         w)Wishes="$optarg";;
-        ?)echo "invalid options: -"$optarg" >&2; Usage; exit;;
+        ?)echo "invalid options: -"$optarg"" >&2; Usage; exit;;
         :)Usage; exit;;
         h)Usage; exit;;
     esac
@@ -26,4 +26,5 @@ if [ -z "$Name" ] || [ -z "$Wishes" ]; then
     Usage
     exit 1
 fi
+
 echo "Hello $Name. $Wishes. I have been learning shell script." 
