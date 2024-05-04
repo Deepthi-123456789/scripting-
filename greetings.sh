@@ -6,9 +6,9 @@ Wishes=""
 USAGE(){
     echo "USAGE:: $(basename $0) -n <name> -w <wishes>"
     echo "options::"
-    echo "-n, specify the name"
-    echo "-w, specify the wishes.(optinal). default is good morning"
-    echo "-h, Display help and exit"
+    echo " -n, specify the name"
+    echo " -w, specify the wishes.(optinal). default is good morning"
+    echo " -h, Display help and exit"
 }
 
 while getopts ":n:w:h" opt; do 
