@@ -19,7 +19,7 @@ while getopts ":n:w:h" opt; do
     esac
 done
 
-if [ -z "$Name" ]; || [ -z "$Wishes" ]; then
+if [ -z "$Name" ] || [ -z "$Wishes" ]; then
     echo "Error: -n is mandarotry optins."
     Usage
     exit 1
