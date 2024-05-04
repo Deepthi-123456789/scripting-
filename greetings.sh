@@ -26,5 +26,4 @@ if [ -z "$Name" ] || [ -z "$Wishes" ]; then
     Usage
     exit 1
 fi
-
 echo "Hello $Name. $Wishes. I have been learning shell script." 
